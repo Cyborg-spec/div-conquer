@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: #000;
+}
+
+.container {
+	width: 94vw;
+	margin-left: 3vw;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 3vw;
+	z-index: 1000000;
+}
+
+header.header-sticky {
+	padding: 5px 3vw;
+	background: #daf1ff;
+}
+
+header .header-logo {
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+header ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li {
+	position: relative;
+	list-style: none;
+}
+
+header ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #b9e5ff;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+header ul li a::after {
+	content: '';
+	position: absolute;
+	left: -3px;
+	bottom: -4px;
+	width: 0;
+	height: 2px;
+	background-color: #4dd5ff;
+	transition: width 0.3s ease-in-out;
+}
+
+header.header-sticky ul li a::after {
+	background-color: #000;
+}
+
+header ul li a:hover::after {
+	width: calc(100% + 6px);
+}
+
+header.header-sticky .header-logo,
+header.header-sticky ul li a {
+	color:#000;
+}
+
+section.bg-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+section.bg-image img {
+	width: 100%;
+}
+
+section.title-section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 200px;
+}
+
+section.title-section img {
+	width: 20%;
+	border-radius: 25px;
+	margin-right: 250px;
+}
+
+section.title-section div {
+	width: 30%;
+}
+
+section.title-section div h1 {
+	color: #000;
+	background: #aff6ffe0;
+	padding: 25px 15px;
+	border-radius: 25px;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+
+section.title-section h1 {
+	color: #000;
+	background: #aff6ffe0;
+	padding: 25px 45px;
+	border-radius: 25px;
+	font-size: 3em;
+}
+
+section.title-section div p {
+	color: #fff;
+	background: #031922c9;
+	padding: 10px;
+	border-radius: 25px;
+	font-size: 1em;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: #daf1ff;
+	color: #000;
+	padding: 20px 0;
+}
+
+.about-person {
+  display: flex;
+  align-items: center;
+	justify-content: space-between;
+	padding: 80px 0;
+}
+
+.about-person:first-of-type {
+	margin-top: 100px;
+}
+
+.about-person-reverse {
+	flex-direction: row-reverse;
+}
+
+.about-person img {
+	width: 500px;
+	margin: 0 5%;
+	border-top-right-radius: 35px;
+	border-bottom-left-radius: 35px;
+}
+
+.about-person-reverse img {
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.about-person .about-content {
+	margin: 0 5%;
+	color: #fff;
+}
+
+.about-person .about-content h1 {
+	font-size: 3em;
+	color: #4dd5ff;
+}
+
+.about-person .about-content p {
+	font-size: 1.2em;
+}
+
+.about-person .about-content ul.details {
+	list-style: none;
+
+}
+
+.about-person .about-content ul.details li {
+	margin: 10px 0;
+}
+
+.about-person .about-content ul.details li strong {
+	color: #00baf3;
+}
+
+.about-person .about-content ul.details li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img {
+	max-height: 400px;
+}
+
+.slideshow-container .prev,
+.slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slideshow-dots {
+	text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.hour-of-code-h1 {
+	margin-top: 150px;
+	margin-bottom: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
+}
+
+.hour-of-code-h1:nth-of-type(2) {
+	margin-top: 80px;
+}
+
+.hour-of-code_info {
+	color: #fff;
+	max-width: 850px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.hour-of-code_info .buttons {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.web-project-container .toggle-button,
+.controls .toggle-button,
+.hour-of-code_info .toggle-button {
+  background-color: #0066ff;
+  border: 1px solid #0066ff;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#0066ff 4px 4px 0 1px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+	width: 180px;
+  overflow: visible;
+  padding: 12px 0;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+	transition: all 0.3s ease;
+}
+
+.web-project-container .toggle-button:focus,
+.controls .toggle-button:focus,
+.hour-of-code_info .toggle-button:focus {
+  text-decoration: none;
+}
+
+.web-project-container .toggle-button:hover,
+.controls .toggle-button:hover,
+.hour-of-code_info .toggle-button:hover {
+  text-decoration: none;
+}
+
+.web-project-container .toggle-button:active,
+.controls .toggle-button:active,
+.hour-of-code_info .toggle-button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.web-project-container .toggle-button:not([disabled]):active,
+.controls .toggle-button:not([disabled]):active,
+.hour-of-code_info .toggle-button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.web-project-container .toggle-button .active-button,
+.controls .toggle-button.active-button,
+.hour-of-code_info .toggle-button.active-button {
+	background-color: #5297ff;
+  border: 1px solid #5297ff;
+  box-shadow: #fff 4px 4px 0 0,#5297ff 4px 4px 0 1px;
+}
+
+.hour-of-code_info .toggle-text {
+	max-width: 850px;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.hour-of-code_info .toggle-text.active-text {
+  position: static;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.h1-code-artist{
+	text-align: center;
+	margin-top: 150px;
+	color: #fff;
+	font-size: 3em;
+}
+
+.p-code-artist{
+	color: #b9e5ff;
+	font-size: 1.2rem;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.controls {
+	margin: 30px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.controls label{
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+canvas {
+	border: 2px solid #4dd5ff;
+	background-color: #000;
+	display: block;
+	margin: 30px auto;
+
+}
+input[type="number"] {
+	padding: 10px;
+	font-size: 1.1rem;
+	border: 1px solid #b9e5ff;
+	border-radius: 5px;
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	width: 70px;
+	margin-left: 10px;
+}
+.web-project-container {
+	min-height: 100vh;
+	width: 100%;
+	margin-bottom: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.web-project-container h1 {
+	color: #000;
+	background: #aff6ffe0;
+	padding: 25px 65px;
+	border-radius: 25px;
+	font-size: 3em;
+}
+
+.web-project-container a button {
+	margin: 25px 20px 0 20px;
+}
+
+
+
+
+
+
+
+
+

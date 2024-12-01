@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)2024 by Elnur Mammadli, Javidan Sultan
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hour of Code | Div&Conquer</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" href="img/project-logo.jpg"/>
+</head>
+<body>
+<header>
+    <a href="index.html" class="header-logo">Div & Conquer</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="hour-of-code.html">Hour of Code</a></li>
+        <li><a href="web-project.html">Website Project</a></li>
+        <li><a href="code-artist.html">Code Art</a></li>
+    </ul>
+</header>
+
+<section class="bg-image">
+    <img src="./img/background-image.png" alt="Background Image"/>
+</section>
+
+<h1 class="hour-of-code-h1">Hour of Code - Gallery</h1>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/img_8.png" style="width: 100%"/>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/img.png" style="width: 100%"/>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/img_1.png" style="width: 100%"/>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/img_2.png" style="width: 100%"/>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/img_5.png" style="width: 100%"/>
+    </div>
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/img_6.png" style="width: 100%"/>
+    </div>
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/img_7.png" style="width: 100%"/>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/WhatsApp%20Image%202024-12-01%20at%2015.26.11_6cc5a750.jpg" style="width: 100%"/>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/img_4.png" style="width: 100%"/>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="./img/hour-of-code-media/img_3.png" style="width: 100%"/>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br/>
+
+<div class="slideshow-dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+<h1 class="hour-of-code-h1">Information</h1>
+
+<div class="hour-of-code_info">
+    <div class="buttons">
+        <button class="toggle-button active-button" data-target="text-1">Place</button>
+        <button class="toggle-button" data-target="text-2">Problems</button>
+        <button class="toggle-button" data-target="text-3">Process</button>
+        <button class="toggle-button" data-target="text-4">Result</button>
+    </div>
+    <div class="texts">
+        <p id="text-1" class="toggle-text active-text">
+            Team 71 carried out an Hour of code on the November 5th at Secondary School No. 27 in Baku as a way to
+            motivate young learners to learn how to code. In cooperation with the school's administration, we carried
+            out a captivating session with 20 students of sixth and seventh grades.
+        </p>
+        <p id="text-2" class="toggle-text">
+            We made sure that students from schools who do not often hold such activities were well reached allowing our
+            outreach to be effective. Posters were put up for students who might be interested in the program and we
+            made a special mention stating that there would be completion certificates to encourage participation. While
+            getting started, there was an introduction that covered the basic principles of code which was presented on
+            a screen and guidance was provided to the audience. Our team made it its priority so that every school
+            member had a workable even degree comprehension of language and coding. Very few minor technical hiccups
+            were solved as a result of collaboration and creativity.
+
+        </p>
+        <p id="text-3" class="toggle-text">
+            Students participated actively. They were inquisitive and assisted their colleagues. We were able to keep
+            our eyes on the targets thanks to inspiring some distraction and promoting co-working.
+        </p>
+        <p id="text-4" class="toggle-text">
+            Certificates were awarded when the session was complete in order to recognize participants. What’s more
+            important, the kids have been introduced to coding, and students’ willingness to engage in additional
+            education in technology was increased. Both students and our team had a fruitful experience, as it
+            demonstrated the importance of collaboration and the capabilities of young people.
+        </p>
+    </div>
+</div>
+
+<footer>
+    <h4>All rights reserved. &copy; 2024 Div & Conquer</h4>
+</footer>
+<script src="hour-of-code.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

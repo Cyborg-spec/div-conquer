@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)2024 by Elnur Mammadli, Javidan Sultan
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Artist - Fractal Tree</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/project-logo.jpg"/>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="header-logo">Div & Conquer</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="hour-of-code.html">Hour of Code</a></li>
+        <li><a href="web-project.html">Website Project</a></li>
+        <li><a href="code-artist.html">Code Art</a></li>
+    </ul>
+</header>
+
+<h1 class="h1-code-artist">Fractal Tree</h1>
+<p class="p-code-artist">Discover the beauty of fractals by generating a fractal tree using recursion. Adjust parameters
+    to create
+    different tree shapes.</p>
+
+<div class="controls">
+    <button class="toggle-button" id="drawTree">Draw Tree</button>
+    <button class="toggle-button" id="clearCanvas">Clear Canvas</button>
+    <label for="depth">Depth:</label>
+    <input type="number" id="depth" min="1" max="10" value="5">
+</div>
+<canvas id="treeCanvas" width="800" height="600"></canvas>
+<script src="code-artist.js"></script>
+<script src="script.js"></script>
+<footer>
+    <h4>All rights reserved. &copy; 2024 Div & Conquer</h4>
+</footer>
+</body>
+</html>
+
